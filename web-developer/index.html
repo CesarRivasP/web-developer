@@ -16,13 +16,13 @@
   <body>
     <!-- Estilos en linea -->
     <!-- <header style="color:red; background:blue;">  -->
-    <header>
+    <header class="header">
       <div>
-        <figure>
+        <figure class="logo">
           <img src="images/logo.png" alt="Logo de http://leonidasesteban.com" /> <!-- Ruta relativa -->
           <!-- alt sirve con las imagenes para poner un texto alternativo cuando la imagen no logra cargar-->
         </figure>
-        <nav>
+        <nav class="menu">
           <ol>
             <li>
               <a class="link" href="#portfolio">Portfolio</a>
@@ -39,46 +39,48 @@
       </div>
     </header>
     <!-- <section>Seccion Principal</section> -->
-    <section>
+    <section class="hero">
       <h1>Hola! Soy <strong>Leonidas Esteban</strong> <br> Desarrollador <strong>Javascript</strong></h1>
       <img src="images/hero.jpg" alt="" width="500" height="300" alt="Imagen principal del sitio"/>
       <!-- Se acostumbra a llamar hero a la parte que mas destaca  -->
     </section>
     <!-- <section>Seccion Portafolio</section> -->
-    <section id="portfolio">
-      <article>
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <h3>Platzi Video</h3>
-        <h6>React Native / React</h6>
-        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-        <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-        <p>
+    <section class="portfolio" id="portfolio">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article class="proyect">
+        <h3 class="proyect-title">Platzi Video</h3>
+        <h6 class="proyect-course">React Native / React</h6>
+        <p class="proyect-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p class="proyect-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+        <p class="proyect-description">
           Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar
           el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados
           de navegacion, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma
         </p>
-        <img src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500"/>
+        <figure class="proyect-image-container">
+          <img class="proyect-image" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React Native" width="500"/>
+        </figure>
       </article>
     </section>
     <!-- <section>Eventos</section> -->
     <section id="events">
       <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="images/platzi-conf.jpg" width="500" alt="">
+      <article class="event">
+        <figure class="event-image-container">
+          <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="">
         </figure>
-        <h3>PlatziConf México 2018</h3>
-        <p>
+        <h3 class="event-title">PlatziConf México 2018</h3>
+        <p class="event-description">
           El evento mas grande sobre gente que quiere aprender mas de internet. En esté evento te comparto
           como tener una vida de constante aprendisaje
         </p>
-        <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+        <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
         <!-- target blank para que habra el contenido en otra pagina-->
       </article>
     </section>
     <!-- <section>Contacto</section> -->
-    <section id="contact">
-      <form action="/suscripcion/"> <!-- action indica para el backend a donde se va a enviar la informacion del formulario -->
+    <section id="contact" class="contact">
+      <form action="/suscripcion/" class="form-email"> <!-- action indica para el backend a donde se va a enviar la informacion del formulario -->
         <!-- <label for="email">Déjame tu email</label> <!-- for permite hacer un enlace directo al atributo id de un input, por ejemplo -->
         <!-- <input type="datetime" placeholder="Déjame tu email" id="email"> <!-- value: valor por defecto -->
         <!-- <input type="checkbox" placeholder="Déjame tu email" id="email"> <!-- value: valor por defecto -->
@@ -88,6 +90,6 @@
         <button>Enviar</button>
       </form>
     </section>
-    <footer></footer>
+    <footer class="footer"></footer>
   </body>
 </html>
