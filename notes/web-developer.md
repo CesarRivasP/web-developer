@@ -89,6 +89,7 @@ La etiqueta ul define una lista desordenada, en la que el orden de los elementos
 
 <ol> . . . </ol>
 La etiqueta ol define una lista ordenada (numerada) que consta de uno o más elementos de lista (li).
+Por defecto siempre va a querer numerar los items que la componen
 
 <li> . . . </li>
 La etiqueta li define un elemento en una lista, se usa dentro de las etiquetas ol y ul.
@@ -104,3 +105,72 @@ La etiqueta head contiene información sobre el documento, una colección de met
 
 <body> . . . </body>
 La etiqueta body, valga la redundancia, contiene el contenido del documento.
+<hn> . . . </hn> (h1, h2, h3, h4, h5, h6)
+Las etiquetas hn especifica un encabezado que describe brevemente la sección que presenta, hay seis niveles de encabezados, desde h1 (más importante) hasta h6 (menos importante). La sintaxis HTML requiere que los encabezados aparezcan en orden (por ejemplo, un h2 no debe preceder a h1) para una estructura de documento adecuada.
+
+<figure> . . . </figure>
+La etiqueta figure nos indica algún conjunto de contenido independiente que se hace referencia desde el contenido principal, como ilustraciones, ejemplos de códigos, diagramas y poemas.
+
+<img/>
+La etiqueta img representa una imagen en el contenido.
+
+<article> . . . </article>
+La etiqueta article representa una pieza de contenido independiente, ya sea un artículo de revista, una publicación de blog, un comentario de un lector.
+
+<p> . . . </p>
+La etiqueta p denota un párrafo, pueden contener texto y elementos en línea, pero no pueden contener otros elementos de bloque, incluidos otros párrafos.
+
+<small> . . . </small>
+La etiqueta small nos indica un apéndice o una nota al margen al texto principal, como por ejemplo la “letra pequeña” legal en la parte inferior del documento.
+
+<strong> . . . </strong>
+La etiqueta strong indica que una palabra o frase es importante o que requiere atención adicional (generalmente se muestra en negrita).
+
+
+Etiquetas y definiciones
+
+<!doctype html> Define que el documento esta bajo el estandar de HTML 5
+
+<head> Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.
+
+<title> Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.
+
+<base> Define la URL base para las URLs relativas en la página.
+
+<link> Usada para enlazar JavaScript y CSS externos con el documento HTML actual.
+
+<meta> Define los metadatos que no pueden ser definidos usando otro elemento HTML.
+
+<style> Etiqueta de estilo usada para escribir CSS en línea.
+
+<body> Representa el contenido principal de un documento HTML. Solo hay un elemento <body> en un documento.
+
+<section> Define una sección en un documento
+
+<nav> Define una sección que solamente contiene enlaces de navegación
+
+<article> Define contenido autónomo que podría existir independientemente del resto del contenido.
+
+<aside> Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido
+
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6>	Los elemento de cabecera implementan seis niveles de cabeceras de documentos; <h1> es la de mayor y <h6> es la de menor impotancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.
+
+<header> Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.
+
+<footer> Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.
+
+<address> Define una sección que contiene información de contacto.
+
+<main> Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.
+
+<p>	Define una parte que debe mostrarse como un párrafo.
+
+<ol>	Define una lista ordenada de artículos.
+
+<ul>	Define una lista de artículos sin orden.
+
+<li>	Define un artículo de una lista ennumerada.
+
+<div> Representa un contenedor genérico sin ningún significado especial.
+### Enlaces
+Son un ancla, que puede ser una pagina interna o una pagina externa al website
