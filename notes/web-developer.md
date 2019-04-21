@@ -192,3 +192,19 @@ En el caso de las imágenes, les recomiendo comprimirlas para que la página web
 La etiqueta <figure> se utiliza para «vincular» la imagen a un pequeño texto descriptivo de la misma (conocido como caption).
 El beneficio es semántico. El navegador sabrá de la relación entre esa imagen y ese texto.
 No es necesario utilizar <figure> si tu imagen no necesita de ese refuerzo de texto.
+
+
+### form
+Es posible agregar reglas a los formularios como, por ejemplo, que un campo sea requerido para enviar el formulario.
+El primer input al recibir el atributo “required” condicionara al segundo input a que no se podrá enviar el formulario hasta que se rellene el campo del primer input.
+
+También existen los inputs de tipo email que mostraran al usuario un mensaje si no coloco un texto con formato de email, por ejemplo:
+
+Un tip que me ha servido mucho, si por algún motivo no quieres que tu formulario se complete automáticamente, dentro de la etiqueta <form> puedes agregar el atributo autocomplete=“off”.
+
+Apunte interesante, pero necesario a mi manera de ver:
+Existen dos maneras de enviar los datos mediante un formulario, mediante el metodo post y el metodo get.
+
+<form action="index.html"method="post">
+<form action="index.html"method=""get>
+La diferencia entre los métodos get y post radica en la forma de enviar los datos a la página cuando se pulsa el botón “Enviar”. Mientras que el método GET envía los datos usando la URL, el método POST los envía de forma que no podemos verlos (en un segundo plano u “ocultos” al usuario).
