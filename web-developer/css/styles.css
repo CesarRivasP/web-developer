@@ -1,0 +1,31 @@
+/*
+reglas:estan conformadas por:
+  * selectores: son la manera de identificar a uno o mas elementos dentro de nuestro html
+    - selector de etiqueta
+    - selector de descendente
+    - Selector de clase
+    - Selector de id
+  * declaraciones: es todo lo que hacemos con el selector
+  * propiedades: son las acciones particulares que podemos realizar con los elementos
+  * valores: son los valores que esperan recibir las propiedades como si fueran variables
+*/
+
+/* selector de etiqueta: header, section, article */
+header {
+  /* background: pink !important; */
+  background: pink;
+  color: red;
+}
+
+/* selector de descendente: va a ser un elemento hijo de algun otro elemento */
+/* Toma todas las a alli dentro */
+/* body header div nav ol li a {} */
+
+
+/* Selector de clase */
+.link {
+
+}
+
+/* Selector de id*/
+/* #portafolio */
