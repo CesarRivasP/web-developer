@@ -295,3 +295,9 @@ Recordar:
 
 Los id deben son únicos, es decir, no se pueden repetir.
 Las clases si se pueden repetir.
+
+
+
+Cuando desarrollamos una página web, notamos que ésta se ve diferente según el navegador que utilicemos, una alternativa es Normalize.css.
+Pero ¿Qué es Normalize.css?
+Normalize.css es un pequeño archivo CSS que proporciona una mejor coherencia entre navegadores en el diseño predeterminado de los elementos HTML.
