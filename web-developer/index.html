@@ -4,8 +4,18 @@
     <meta charset="utf-8">
     <title>Leonidas Esteban Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Mediante tags: Dentro se indican los Selectores-->
+    <!-- <style>
+      header {
+        background: green;
+      }
+    </style> -->
+    <!-- Mediante archivos externos -->
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!-- Estilos en linea -->
+    <!-- <header style="color:red; background:blue;">  -->
     <header>
       <div>
         <figure>
@@ -15,13 +25,14 @@
         <nav>
           <ol>
             <li>
-              <a href="">Portfolio</a>
+              <a class="link" href="#portfolio">Portfolio</a>
+              <!-- <a href="./portafolio/index.html">Portfolio</a> <!--En caso de la referencia sea a otra paginaAS-->
             </li>
             <li>
-              <a href="">Experiencia</a>
+              <a class="link" href="#events">Experiencia</a>
             </li>
             <li>
-              <a href="">Trabajemos juntos</a>
+              <a class="link" href="#contact">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -34,7 +45,7 @@
       <!-- Se acostumbra a llamar hero a la parte que mas destaca  -->
     </section>
     <!-- <section>Seccion Portafolio</section> -->
-    <section>
+    <section id="portfolio">
       <article>
         <h2>Portafolio (Proyectos Destacados)</h2>
         <h3>Platzi Video</h3>
@@ -50,7 +61,7 @@
       </article>
     </section>
     <!-- <section>Eventos</section> -->
-    <section>
+    <section id="events">
       <h2>Más sobre mi experiencia</h2>
       <article>
         <figure>
@@ -61,11 +72,12 @@
           El evento mas grande sobre gente que quiere aprender mas de internet. En esté evento te comparto
           como tener una vida de constante aprendisaje
         </p>
-        <a href="">Ver Plática</a>
+        <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+        <!-- target blank para que habra el contenido en otra pagina-->
       </article>
     </section>
     <!-- <section>Contacto</section> -->
-    <section>
+    <section id="contact">
       <form action="/suscripcion/"> <!-- action indica para el backend a donde se va a enviar la informacion del formulario -->
         <!-- <label for="email">Déjame tu email</label> <!-- for permite hacer un enlace directo al atributo id de un input, por ejemplo -->
         <!-- <input type="datetime" placeholder="Déjame tu email" id="email"> <!-- value: valor por defecto -->
