@@ -174,3 +174,21 @@ Etiquetas y definiciones
 <div> Representa un contenedor genérico sin ningún significado especial.
 ### Enlaces
 Son un ancla, que puede ser una pagina interna o una pagina externa al website
+
+### Favicons
+Favicon Generator ayuda a que tu icono favicon tenga máxima compatibilidad en todos los navegadores posibles de manera casi automatica.
+
+Si lo haces manual tendrás que exportar tu icono favicon a cada resolucion aceptada para cada tipo de display y cada navegador. Todo uno por uno. Incluso puede que se te olvide colocar alguno.
+
+#### UTF-8
+UTF-8 es la forma más utilizada para representar texto Unicode en páginas web, y siempre debemos usarla al crear nuestras páginas web.
+Pero, ¿Qué es Unicode?
+Unicode es un estándar universal de codificación de caracteres que se utiliza para admitir caracteres no compatibles con ASCII.
+
+#### Compresor de imagenes
+En el caso de las imágenes, les recomiendo comprimirlas para que la página web cargue más rápido. El compresor que más utilizo y me ha dado grandes resultados ha sido: https://compressor.io
+
+## figure
+La etiqueta <figure> se utiliza para «vincular» la imagen a un pequeño texto descriptivo de la misma (conocido como caption).
+El beneficio es semántico. El navegador sabrá de la relación entre esa imagen y ese texto.
+No es necesario utilizar <figure> si tu imagen no necesita de ese refuerzo de texto.
