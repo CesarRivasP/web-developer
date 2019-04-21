@@ -208,3 +208,90 @@ Existen dos maneras de enviar los datos mediante un formulario, mediante el meto
 <form action="index.html"method="post">
 <form action="index.html"method=""get>
 La diferencia entre los métodos get y post radica en la forma de enviar los datos a la página cuando se pulsa el botón “Enviar”. Mientras que el método GET envía los datos usando la URL, el método POST los envía de forma que no podemos verlos (en un segundo plano u “ocultos” al usuario).
+
+
+
+En esta clase se mostró como hacer una navegacion interna sin js, solo con html. Pero existe la posibilidad de animar la navegación al hacer scroll con ANIMATE SCROLL.
+
+
+
+target
+Especifica en donde desplegar la URL enlazada:
+
+_self: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
+_blank: Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
+_parent: Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que _self.
+_top: Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que _self.
+
+
+
+Existen 3 formas de agregar estilos a nuestro sitio:
+
+Estilo en línea (Inline):
+Utiliza el atributo style.
+No es para nada recomendado ya que Html sirve para definir la estructura y semántica del código y no el aspecto visual, aquí estaríamos mezclando todo.
+Esta tiene mas peso que al usar la etiqueta style o utilizando un archivo externo
+
+Estilo interno (Internal):
+Utiliza una etiqueta style.
+Separa en cierto modo, de una forma menos sucia (por decirlo así). Esta forma sigue sin ser la más recomendada porque seguimos mezclando lo que es el aspecto visual con la estructura y semántica del código.
+
+Estilo externo (External):
+Utilizando un archivo CSS externo al documento HTML.
+Esta es la forma más recomendada porque estamos separando totalmente la estructura y semántica con el aspecto visual.
+
+Orden de los estilos en cascada por prioridad:
+
+Estilo Inline.
+Estilo externo o interno (dependen de la posición en la que se declaren en el html, recordar que van en “cascada”).
+Estilo por defecto del navegador.
+Se puede utilizar !important para romper cascadas y priorizar (aunque no es recomendable).
+
+### Estructura CSS
+También recordar que existen varios tipos de selectores:
+1. Selector de etiqueta: refiere a etiquetas HTML, como el ejemplo de la imagen.
+2. Selector descendiente: refiere a etiquetas HTML de forma hereditaria.
+3. Selector de id: refiere a atributos id de etiquetas HTML.
+4. Selector de class (clase): refiere a atributos class de etiquetas HTML.
+
+Selector de etiqueta: selecciona únicamente la etiqueta que escribimos.
+Ej:
+
+/*si ponemos el siguiente código*/
+a {
+color: blue;
+}
+/*Nos aplicará un color azul a todas las etiquetas de ancla en el documento HTML*/
+Selector descendente: Ej:
+
+bodyheaderdivnavolli a{
+	color: green;
+}
+/*nos aplicará el estilo únicamente a las etiquetas de ancla (<a>) que estén dentro de <li>*/
+Selector de Id: selecciona únicamente el elemento con ese id
+Ej:
+
+/*supongamos que tenemos una etiqueta de párrafo con la id "parrafo1"...*/
+
+#parrafo1{
+	color: blue;
+}
+
+/*Nos aplicará el estilo únicamente a ese párrafo con id "parrafo1", PD las id son únicas no puedes poner una misma id en dos etiquetas distintas*/
+Selector de clase: Este selector aplicará los estilos a todas las etiquetas con la misma clase independientemente de su Id o tipo de etiqueta.
+
+Ej:
+supongamos que tenemos una etiqueta de ancla (<a>), una de párrafo (<p>) y una de titulo 2 (<h2>) con la clase “importante”…
+
+.importante {
+	color: pink;
+}
+Este código pondrá de color rosado el texto de las etiquetas con esta clase, en este ejemplo estas son: (<a>), (<p>) y (<h2>).
+
+
+
+
+Recordar:
+
+Los id deben son únicos, es decir, no se pueden repetir.
+Las clases si se pueden repetir.
