@@ -301,3 +301,57 @@ Las clases si se pueden repetir.
 Cuando desarrollamos una página web, notamos que ésta se ve diferente según el navegador que utilicemos, una alternativa es Normalize.css.
 Pero ¿Qué es Normalize.css?
 Normalize.css es un pequeño archivo CSS que proporciona una mejor coherencia entre navegadores en el diseño predeterminado de los elementos HTML.
+
+
+
+### Unidades de medida y colores
+Podemos representar un color de 3 formas dentro de CSS:
+
+Palabra clave: red, blue, pink, etc.
+Hexadecimales: 0123456789ABCDEF
+hls() hlsa()
+#000000 = Negro
+#FFFFFF = Blanco
+- Se representan por grupos de 2 -> Primeros dos representan Red, siguientes dos representan Green, siguientes dos representan Blue
+- El '0' representa ausencia de color
+- La 'F' representa que se posee toda la luminosidad que refleja color blanco
+
+
+#FF0000 = Rojo
+#00FF00 = Verde
+#0000FF = Azul
+Para obtener un color más exacto se utiliza rgb o rgba:
+
+rgb(0, 200, 145)
+rgba(0, 50, 70, 0.5) para obtener transparencia
+
+La unidad de medida por excelencia dentro del mundo digital es el pixel
+¿Qué es un pixel?
+La menor unidad homogenea en color que forma parte de una imagen digital.
+
+
+En realidad si tiene impacto usar HEX o RGB dentro de los navegadores…
+La mejor compatibilidad la tiene RGB, pues todos los navegadores soportan el rango 0-255
+Por otro lado con RGB se pueden obtener una pequeña gama más amplia a diferencia de HEX.
+Sí, es cierto que es más común HEX, pero por mejor compatibilidad se recomienda RGB.
+
+>Los tags html tambien tienen estado: hover, active, focus, focus-within, visited
+
+
+los colores HLS = equivalen a (tono, saturación, luminosidad), que le permite declarar los colores con el uso de estos tres parámetros:
+
+Hue = tom, Saturation = saturacion and Lightness = luminosidade
+
+se usan asi
+selector { color: hsl(120, 75%, 50%); }
+
+el primer valor del ángulo sigue las reglas de la trigonometría para medir los ángulos, tiene limites de 0 grados a 360 grados, y no se admiten numeros negativos.
+Ej: 120 grados, 45 grados, 0 grados, 360grados
+
+El segundo valor es para la saturación (saturación) del color. Su valor se expresa en porcentaje. Un valor igual al 100% representa saturación total del color y 0 es un ligero sombreado gris de saturación
+
+**El tercer valor **es para el brillo (ligereza). Su valor se expresa en porcentaje. Un valor igual al 100% resulta en color blanco y 0 en color negro, siendo el 50% el valor normal.
+
+Los colores de HSLA = equivalen a (tonalidad, saturación, ligereza, alfa-opacity) es una manera extendida de la declaración HSL en la que un cuarto argumento define la opacidad del color. Este cuarto argumento es un número decimal entre 0 y 1.
+
+se rige a las mismas reglas que el HLS, pero incluyendo la opacidad que, este **campo A (opacidad alfa) **admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
