@@ -60,7 +60,7 @@ h1 {
 }
 
 h1 strong {
-  color: #026fff;  
+  color: #026fff;
 }
 
 .header {
@@ -83,6 +83,20 @@ h1 strong {
   background-size: 500px 300px;
   background-repeat: no-repeat; /* Para que no se repita la imagen*/
   background-position-x: right;
+}
+
+.proyect {
+          /* tamaño | tipo | estilo del borde*/
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* border-color: red;  Por defecto el borde es del color del texto de la clase */
+  /* border-top-color: red;  Para ser mas especifico */
+  /* border-width: 15px;
+  border-style: solid; */
+  border: 1px solid gray;
+  /* border-radius: 10px; */
 }
 
 /* .proyect div {} -> en caso de no agregarle la clase al div */
