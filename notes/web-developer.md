@@ -387,3 +387,35 @@ border-left
 Para redondear el borde:
 
 border-radius: tamaño
+
+### Margenes
+La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top, margin-right, margin-bottom y margin-left.
+
+Margin collapsing: Cuando dos elementos tienen un margen y están juntos, no se suman sino que se mantiene como dominante el de aquel elemento que tengan el mayor margen. Ejemplo div-A tiene un margen-bottom: 50px; y div-B tiene un margin-top: 20px; El margen total no es de 70px sino que se mantiene el mayor por lo tanto sería de 50px.
+
+Nota: Un margen no empuja a otro. El margen es un espaciado fuera de los elementos.
+
+### Padding
+La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde (border) no se permiten valores negativos.
+
+La propiedad padding es un atajo para evitar la asignación de cada lado por separado (padding-top, padding-right, padding-bottom, padding-left).
+
+padding: arriba derecha abajo izquierda;
+Diferencias de las propiedades padding y margin:
+
+Margin es el margen que hay desde un elemento hasta los que tenga al lado.
+Padding es el espacio que hay en un contenedor entre el contenido y los bordes del contenedor.
+
+El padding es un espaciado dentro de los elementos.
+
+
+### Modelo de caja
+El modelo de caja esta compuesto por 3 elementos fundamentales: Tamaño del elemento, el padding y el margin, estos elementos pueden formar el espacio de ubicación del elemento
+
+EL modelo de caja puede ser alterado mediante display especiales o propiedad especial que ayude a leer el modelo de caja
+
+Una de esas propiedades es box-sizing : border-box lo que permite que siempre sin importar el borde o el paddin ocupe un mismo tamaño, siempre
+
+El modelo de cajas o “box model” es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
+
+Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean
