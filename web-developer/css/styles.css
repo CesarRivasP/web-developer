@@ -55,6 +55,42 @@ h1 {
 
   /* Transformar fuentes */
   text-transform: uppercase; /*capitalize: primeras letras de cada palabra en mayuscula*/
+  /*text-decoration: underline;  underline: subrayado*/
+  color: white;
+}
 
-  text-decoration: underline;  /* underline: subrayado*/
+h1 strong {
+  color: #026fff;  
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+}
+
+/* Agregar color a los enlaces */
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 300px;
+  /* Imagen de fonde */
+  background-image: url('../images/hero.jpg');
+  background-color: #1b2127;
+                /* width height; */
+  background-size: 500px 300px;
+  background-repeat: no-repeat; /* Para que no se repita la imagen*/
+  background-position-x: right;
+}
+
+/* .proyect div {} -> en caso de no agregarle la clase al div */
+.proyect-details {
+  width: 500px;
+  height: 200px;
+}
+
+.proyect-image-container {
+  width: 500px;
 }
