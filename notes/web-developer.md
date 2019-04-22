@@ -218,10 +218,10 @@ En esta clase se mostró como hacer una navegacion interna sin js, solo con html
 target
 Especifica en donde desplegar la URL enlazada:
 
-_self: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
-_blank: Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
-_parent: Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que _self.
-_top: Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que _self.
+**self**: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
+**blank**: Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
+**parent**: Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que **self**.
+**top**: Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que **self**.
 
 
 
@@ -355,3 +355,12 @@ El segundo valor es para la saturación (saturación) del color. Su valor se exp
 Los colores de HSLA = equivalen a (tonalidad, saturación, ligereza, alfa-opacity) es una manera extendida de la declaración HSL en la que un cuarto argumento define la opacidad del color. Este cuarto argumento es un número decimal entre 0 y 1.
 
 se rige a las mismas reglas que el HLS, pero incluyendo la opacidad que, este **campo A (opacidad alfa) **admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
+
+### Fonts
+line-height para modificar el alto de linea
+font-size para modificar el tamaño de la fuente
+font-weight para modificar el tipo de fuente
+font-style para modificar el estilo de la fuente
+letter-spacing para modificar el espacio entre letras
+text-transform para transformar la fuente (mayúsculas, minúsculas, etc)
+text-decoration para modificar la decoración de la fuente
