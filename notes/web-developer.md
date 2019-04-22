@@ -366,3 +366,10 @@ text-transform para transformar la fuente (mayúsculas, minúsculas, etc)
 text-decoration para modificar la decoración de la fuente
 
 ### Background
+background-color para agregar unn color de fondo
+color para agregar un color al texto
+text-decoration para modificar la decoración del texto
+background-image para agregar una imagen de fondo
+background-size para modificar el tamaño del background asignado
+background-repeat para modificar la repetición del backgound asignado
+background-position para modificar la posición del bakground asignado
