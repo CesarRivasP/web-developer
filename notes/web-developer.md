@@ -350,11 +350,11 @@ Ej: 120 grados, 45 grados, 0 grados, 360grados
 
 El segundo valor es para la saturación (saturación) del color. Su valor se expresa en porcentaje. Un valor igual al 100% representa saturación total del color y 0 es un ligero sombreado gris de saturación
 
-**El tercer valor **es para el brillo (ligereza). Su valor se expresa en porcentaje. Un valor igual al 100% resulta en color blanco y 0 en color negro, siendo el 50% el valor normal.
+**El tercer valor** es para el brillo (ligereza). Su valor se expresa en porcentaje. Un valor igual al 100% resulta en color blanco y 0 en color negro, siendo el 50% el valor normal.
 
 Los colores de HSLA = equivalen a (tonalidad, saturación, ligereza, alfa-opacity) es una manera extendida de la declaración HSL en la que un cuarto argumento define la opacidad del color. Este cuarto argumento es un número decimal entre 0 y 1.
 
-se rige a las mismas reglas que el HLS, pero incluyendo la opacidad que, este **campo A (opacidad alfa) **admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
+se rige a las mismas reglas que el HLS, pero incluyendo la opacidad que, este **campo A (opacidad alfa)** admite decimales de 0 a 1 siendo 0 transparentes y 1 opaco. Los valores decimales se escriben con un punto de punto. Ejemplo: 0.5
 
 ### Fonts
 line-height para modificar el alto de linea
@@ -373,3 +373,17 @@ background-image para agregar una imagen de fondo
 background-size para modificar el tamaño del background asignado
 background-repeat para modificar la repetición del backgound asignado
 background-position para modificar la posición del bakground asignado
+
+### Bordes
+Para asignar un borde:
+
+border: tamaño tipo estilo
+Para asignar el borde solo en una parte podemos usar:
+border-top
+border-right
+border-bottom
+border-left
+
+Para redondear el borde:
+
+border-radius: tamaño
