@@ -1,4 +1,4 @@
-/*
+/* --- EJEMPLOS ---
 reglas:estan conformadas por:
   * selectores: son la manera de identificar a uno o mas elementos dentro de nuestro html
     - selector de etiqueta
@@ -11,11 +11,11 @@ reglas:estan conformadas por:
 */
 
 /* selector de etiqueta: header, section, article */
-header {
-  /* background: pink !important; */
+/* header { Selecto de practica
+  background: pink !important;
   background: pink;
   color: red;
-}
+} */
 
 /* selector de descendente: va a ser un elemento hijo de algun otro elemento */
 /* Toma todas las a alli dentro */
@@ -23,9 +23,38 @@ header {
 
 
 /* Selector de clase */
-.link {
-
-}
+/* .link {} */
 
 /* Selector de id*/
 /* #portafolio */
+
+
+/* Selectores a implementar */
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: 'Open Sans', Times, serif; */
+  font-family: 'Fjalla One', sans-serif;
+  /* Estilos de las fuentes */
+  /* font-weight: normal;  Se suele indicar por multiplos de 100 */
+  /* 400 = normal | negrita: bold = 600*/
+
+  /* font-style: italic;   italic : cursiva */
+}
+
+h1 {
+  /*  Cambiar alto de linea*/
+  line-height: 1.5em;  /*em: (medida) de lo que vale la fuente. 1.5: 100% + 50% -> 150%*/
+  font-size: 40px;
+  /* Separacion de letras */
+  letter-spacing: -.2px; /* 20% de un pixel menos*/
+
+  /* Transformar fuentes */
+  text-transform: uppercase; /*capitalize: primeras letras de cada palabra en mayuscula*/
+
+  text-decoration: underline;  /* underline: subrayado*/
+}
