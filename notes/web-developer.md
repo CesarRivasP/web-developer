@@ -472,3 +472,5 @@ flex-shrink: 0 - 1;
 Esta propiedad se aplica a los hijos, y determina que tan flexibles pueden ser estos, siendo 0 nada flexibles, es decir no se va a modificar para nada el ancho o el alto, o 1 que indica que si pueden ser flexibles
 
 La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. tiene dos valores. flex-wrap: wrap; pueden fluir en varias líneas y flex-wrap: nowrap; por defecto, no pueden fluir a otras lineas
+
+### Justify Content
