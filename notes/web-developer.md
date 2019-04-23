@@ -419,3 +419,56 @@ Una de esas propiedades es box-sizing : border-box lo que permite que siempre si
 El modelo de cajas o “box model” es seguramente la característica más importante del lenguaje de hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.
 
 Las cajas de una página se crean automáticamente. Cada vez que se inserta una etiqueta HTML, se crea una nueva caja rectangular que encierra los contenidos de ese elemento. La siguiente imagen muestra las tres cajas rectangulares que crean
+
+
+### Display
+Todos los elementos tienen algun elemento display, incluyendo elementos que no se ven
+
+Display Block: Hace que un elemento quiera ocupar todo el ancho posible sin importar la cantidad de contenido
+
+Display Inline : Permite apilar al lado los elementos que tenga el mismo display, esperando un poco mas de contenido hacia su lado, es decir va creciendo deacuerdo a la cantidad de contenido
+
+Estos elementos son el comportamientop basico de las etiquetas
+
+Para los elementos que queremos que no se vean podemos usar:
+display: none;
+
+La propiedad display es una de las propiedades CSS más infrautilizadas. Aunque todos los diseñadores conocen esta propiedad y utilizan sus valores inline, block y none, las posibilidades de display son mucho más avanzadas.
+
+De hecho, la propiedad display es una de las más complejas de CSS 2.1, ya que establece el tipo de la caja que genera cada elemento. La propiedad display es tan compleja que casi ningún navegador es capaz de mostrar correctamente todos sus valores.
+
+El valor más sencillo de display es none que hace que el elemento no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad display: none sobre un elemento, todos sus descendientes también desaparecen por completo de la página.
+
+Si se quiere hacer un elemento invisible, es decir, que no se vea pero que siga ocupando el mismo sitio, se debe utilizar la propiedad visibility. La propiedad display: none se utiliza habitualmente en aplicaciones web dinámicas creadas con JavaScript y que muestran/ocultan contenidos cuando el usuario realiza alguna acción como pulsar un botón o un enlace.
+
+Los otros dos valores más utilizados son block e inline que hacen que la caja de un elemento sea de bloque o en línea respectivamente.
+Display block : toma todo el ancho
+
+Display inline: espera elementos a su costado en algunos casos sin respetar valores que se le asignen a la propiedad width
+
+Display inline-block: espera elementos a su costado y toma como ancho los valores asignados en la propiedad width
+Display Inline : Permite apilar al lado los elementos que tenga el mismo display, esperando un poco mas de contenido hacia su lado, es decir va creciendo de acuerdo a la cantidad de contenido
+
+Display flex: Lo puedes ver como un conjunto de propiedades que van a hacer mas dinamica la forma en que quieras alinear los elementos en el DOM
+
+block -> ocupa el 100% del su ancho disponible, lo cual lo hace perfecto para elementos que sean contenedores
+inline -> ocupa el ancho respectivo al contenido que tenga su elemento, por lo tanto si un elemento tiene un texto lo suficientemento largo dentro de el va ocupar todo el ancho, sin excepcion, aunque le apliquemos un width
+inline-block -> hace lo mismo que inline pero respeta el width que le dimos al elemento
+
+### Flexbox
+Tradicionalmente, en CSS se ha utilizado el posicionamiento (static, relative, absolute…), los elementos en línea o en bloque (y derivados) o los float, lo que a grandes rasgos no dejaba de ser un sistema de creación de diseños bastante tradicional que no encaja con los retos que tenemos hoy en día (sistemas de escritorio, dispositivos móviles, múltiples resoluciones, etc…).
+
+Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y acostumbrarnos a una mecánica más potente, limpia y personalizable, en la que los elementos HTML se adaptan y colocan automáticamente y es más fácil personalizar los diseños.
+
+La propiedad display cuando toma el valor flex, se debe recordar que esta propiedad sólo afecta a los componentes html hijos directamente. En tal sentido sí dentro de lo componentes html hijo hay otros componentes html ésta misma propiedad no afectará
+
+Al aplicar la propiedad display: flex los elementos del contenedor se ubicarán en filas, esto se debe a que el valor predeterminado de su distribución es flex-direction: row
+La propiedad de flex-direction especifica la dirección de los elementos flexibles. Nota: si el elemento no es un elemento flexible, la propiedad de flex-direction no tiene efecto.
+
+Propiedad Shrink para evitar que los elementos hijo ajuste automáticamente el ancho de dicho elemento, para mantener las propiedades de ancho de cada elemento hijo (cuyo padre sea FLEX y dicho hijo también sea FLEX), es con: flex-shrink: 0; => esto es el factor de encogimiento.
+
+flex-shrink: 0 - 1;
+
+Esta propiedad se aplica a los hijos, y determina que tan flexibles pueden ser estos, siendo 0 nada flexibles, es decir no se va a modificar para nada el ancho o el alto, o 1 que indica que si pueden ser flexibles
+
+La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. tiene dos valores. flex-wrap: wrap; pueden fluir en varias líneas y flex-wrap: nowrap; por defecto, no pueden fluir a otras lineas
