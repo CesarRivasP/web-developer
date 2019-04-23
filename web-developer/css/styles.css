@@ -111,6 +111,7 @@ h1 strong {
   padding: 20px;
   margin: 10px;
   background: white;
+  display: flex;
 }
 
 /* .proyect div {} -> en caso de no agregarle la clase al div */
@@ -121,4 +122,21 @@ h1 strong {
 
 .proyect-image-container {
   width: 500px;
+}
+
+.flexbox {
+  display: flex;
+  /* flex-direction: row; siempre por defecto asi  */
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; Asi ningun elemento cae a la siguiente fila */
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+  /* Indicar la capacidad de encojimiento de estos elementos */
+  flex-shrink: 0;
 }
