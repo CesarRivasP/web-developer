@@ -474,3 +474,33 @@ Esta propiedad se aplica a los hijos, y determina que tan flexibles pueden ser e
 La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. tiene dos valores. flex-wrap: wrap; pueden fluir en varias líneas y flex-wrap: nowrap; por defecto, no pueden fluir a otras lineas
 
 ### Justify Content
+Cuando se requiere alinear elementos con flex de forma horizontal, necesitamos la propiedad justify-content
+
+space-evenly
+los elementos se distribuyen de manera que el espaciado entre dos sujetos de alineación adyacentes, antes del primer sujeto de alineación, y después del último sujeto de alineación sea el mismo
+
+Practiquen con space evenly para que vean mejor la diferencia.
+
+Un detalle importante a tener en cuenta con las propiedades flex-start y flex-end, es que su comportamiento se invierte cuando se ha definido simultáneamente la propiedad direction como rtl para el objeto padre, que es muy común en la forma de escritura árabe, de derecha a izquierda. También puede surgir un comportamiento inesperado al combinar esta característica con la propiedad flex-wrap.
+
+Cuando el elemento lleva la propiedad
+display: flex
+NO aplica el “margin collapsing”, por ende los márgenes se suman.
+
+### Align Items 
+Cuando se requiere alinear elementos con flex de forma vertical, necesitamos la propiedad align-items
+Sin embargo, cuando se utiliza la propiedad flex-direction: column; entonces se invierten las propiedades de alineamiento, es decir, justify-content alineará de manera vertical y align-items de manera horizontal. Esto se debe a que hemos volteado los elementos.
+Basicamente flexbox tiene 2 ejes, vertical o horizontal lo que tecnicamente se conoce como main axis y cross axis
+Horizontal = Main axis.
+Vertical = cross axis.
+Dependiendo el flex direction row o column, se determina el eje principal y en base a eso se distribuye los elementos hijos.
+
+Hay una pequeña pero importante diferencia entre align-content y align-items. Align-content determina el espacio entre las lineas, mientras que align-items determina como los elementos en su conjunto estan alineados dentro del contenedor. Cuando hay solo una linea, align-content no tiene efecto.
+
+justify-content: para elementos horizontales
+align-items: elementos verticales
+
+
+align-self se utliza en el eje vertical y reemplaza los valores dados por align-items.
+
+Cuando la propiedad flex-direction se ha definido como column, la propiedad justify-content ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y align-items ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
