@@ -130,14 +130,19 @@ figure {
 .hero {
   height: 300px;
   /* Imagen de fonde */
-  background-image: url('../images/hero.jpg');
+  /* background-image: url('../images/hero.jpg'); */
   background-color: #1b2127;
                 /* width height; */
-  background-size: 500px 300px;
-  background-repeat: no-repeat; /* Para que no se repita la imagen*/
-  background-position-x: right;
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; /* Para que no se repita la imagen*/
+  /* background-position-x: right; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  object-fit: cover;
 }
 
 .portfolio {
@@ -220,7 +225,7 @@ figure {
 .event-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  /* justify-content:space-around; */
 }
 
 .event {
@@ -344,4 +349,15 @@ figure {
 
 .footer a {
   color: white;
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
 }
