@@ -75,8 +75,8 @@ h1 strong {
   color: white;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  height: 90px;
+  align-items: center;
+  height: 70px;
 }
 
 
@@ -179,4 +179,21 @@ figure {
   border: 1px solid red;
   /* Indicar la capacidad de encojimiento de estos elementos */
   flex-shrink: 0;
+}
+
+.footer {
+  background-color: #1b2127;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle; /* Para centrar la imagen */
+}
+
+.footer a {
+  color: white;
 }
