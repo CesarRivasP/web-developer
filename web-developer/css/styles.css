@@ -58,8 +58,9 @@ h1 {
   text-transform: uppercase; /*capitalize: primeras letras de cada palabra en mayuscula*/
   /*text-decoration: underline;  underline: subrayado*/
   color: white;
+  margin: 0;
   /* top right bottom left -> en sentido a las agujas del reloj */
-  margin:100px 520px 70px 30px;
+  /* margin:100px 520px 70px 30px; */
   /* top botton | right left */
   /* margin: 100px 70px ; */
   /* margin: 0 auto ; centrado -> todo el espacio disponible de ambos lados*/
@@ -72,6 +73,43 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 90px;
+}
+
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol, li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;  /*Para eliminar la enumeracion*/
+}
+
+figure {
+  margin: 0
 }
 
 /* Agregar color a los enlaces */
@@ -89,6 +127,8 @@ h1 strong {
   background-size: 500px 300px;
   background-repeat: no-repeat; /* Para que no se repita la imagen*/
   background-position-x: right;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio {
