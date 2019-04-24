@@ -487,7 +487,7 @@ Cuando el elemento lleva la propiedad
 display: flex
 NO aplica el “margin collapsing”, por ende los márgenes se suman.
 
-### Align Items 
+### Align Items
 Cuando se requiere alinear elementos con flex de forma vertical, necesitamos la propiedad align-items
 Sin embargo, cuando se utiliza la propiedad flex-direction: column; entonces se invierten las propiedades de alineamiento, es decir, justify-content alineará de manera vertical y align-items de manera horizontal. Esto se debe a que hemos volteado los elementos.
 Basicamente flexbox tiene 2 ejes, vertical o horizontal lo que tecnicamente se conoce como main axis y cross axis
@@ -504,3 +504,34 @@ align-items: elementos verticales
 align-self se utliza en el eje vertical y reemplaza los valores dados por align-items.
 
 Cuando la propiedad flex-direction se ha definido como column, la propiedad justify-content ya no va a aplicar sobre la alineación horizontal, sino sobre la vertical. Y align-items ya no aplicaría sobre la alineación vertical sino la horizontal. Se intercambian sus efectos.
+
+
+Ejercicio
+`.header ol li {
+	display:flex;
+	height: inherit;
+	align-items: center;
+}`
+
+Para los que no lograron comprender muy bien porque no se centran las anclas a pesar que se usa ‘align-items’ junto al ‘display:flex’ en el elemento padre que es el <li>, paso a explicar a continuación.
+
+En primer lugar el objetivo es que el elemento <a> (ancla) pueda abarcar toda la altura del header. Para lograr esto se define la propiedad ‘height’ con un valor fijo en el header(en este caso 90px) y luego se va heredando con el valor ‘inherit’ de padres a hijos hasta llegar al ancla.
+
+Entonces, al tener el elemento ancla la misma altura que su padre, la propiedad ‘align-items: center’ parece no funcionar ya que observamos el texto del ancla en la parte superior del header o menu, sin embargo el flexbox esta realizando correctamente su función ya que estamos centrando un ancla de 90px de alto sobre un padre que tiene la misma altura, teniendo como resultado lo que vemos en la imagen superior, debido a que no hay espacio para centrar porque no hay diferencia de altura entre padre e hijo.
+
+Finalmente para lograr que el texto del ancla quede centrado, tenemos que tratar a este elemento <a> como el ‘padre’ del texto y así logramos con la misma propiedad ‘align-items’ centrar el texto verticalmente, por lo que en este caso en particular no corresponde utilizarlo en el elemento padre del ancla(<li>).
+
+Las reglas CSS para estos elementos quedarían así:
+
+`.header ol li {
+	height: inherit;
+}`
+
+`.header a {
+	color: white;
+	text-decoration: none;
+	display:flex;
+	align-items: center;
+	height: inherit;
+	padding: 010px;
+}`
