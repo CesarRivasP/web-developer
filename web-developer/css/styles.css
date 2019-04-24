@@ -145,7 +145,7 @@ figure {
   padding: 20px;
 }
 
-.proyect {
+.project {
           /* tamaño | tipo | estilo del borde*/
   /* border-top: 10px solid red;
   border-right: 10px solid green;
@@ -166,37 +166,37 @@ figure {
   justify-content: space-between;
 }
 
-.proyect-title {
+.project-title {
   font-size: 30px;
   /* arriba y abajo | los costados */
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* .proyect div {} -> en caso de no agregarle la clase al div */
-.proyect-details {
+/* .project div {} -> en caso de no agregarle la clase al div */
+.project-details {
   width: 500px;
   /* height: 200px; */
 }
 
-.proyect-course,
-.proyect-date,
-.proyect-url {
+.project-course,
+.project-date,
+.project-url {
   margin: 10px 0;
 }
 
-.proyect-description {
+.project-description {
   font-size: 20px
 }
 
-.proyect strong {
+.project strong {
     font-family: 'Fjalla One', sans-serif;
 }
-/* .proyect-date {
+/* .project-date {
   margin: 10px 0;
 } */
 
-.proyect-image-container {
+.project-image-container {
   width: 500px;
 }
 
@@ -215,6 +215,56 @@ figure {
   border: 1px solid red;
   /* Indicar la capacidad de encojimiento de estos elementos */
   flex-shrink: 0;
+}
+
+.event-list {
+  display: flex;
+}
+
+.event {
+  /* border: 1px solid red; */
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;  /* Para que use el tamaño designado*/
+  background: #f4fbff;
+}
+
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;  /* Para que la imagen no se desproporcione*/
+}
+
+.event-list-title {
+  margin-left: 10px; 
+}
+.event-image {
+
+}
+.event-detail {
+  margin: 20px 40px;;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-title {
+
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #056fff;
+  border: 1px solid; /*el borde asimila el color del texto por defecto*/
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .footer {
