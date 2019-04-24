@@ -535,3 +535,36 @@ Las reglas CSS para estos elementos quedarían así:
 	height: inherit;
 	padding: 010px;
 }`
+
+¿Por qué no se debe alinear los textos con justify?
+justify se usa para los contenedores, para los textos existe text-align.
+Creo que es porque la alineación de textos justify aplicada por el navegador es visualmente desagradable en la mayoría de los casos, ya que no se aplica ninguna regla o norma de separación de palabras de una línea a otra, por lo que terminan rellenándose de manera un tanto grosera y poco profesional las líneas con espacios en blanco, de forma descontrolada.
+
+En la siguientes imágenes se pueden ver algunos ejemplos de alineación justificada de manera incorrecta (que es la aplicada por el navegador - automática), y de manera correcta (que es como lo haría una persona - manualmente).
+
+### Position
+La propiedad de posición
+La positionpropiedad especifica el tipo de método de posicionamiento utilizado para un elemento.
+
+Hay cinco valores de posición diferentes:
+
+static
+relative
+fixed
+absolute
+sticky
+Los elementos se colocan utilizando las propiedades superior, inferior, izquierda y derecha. Sin embargo, estas propiedades no funcionarán a menos que la position propiedad se establezca primero. También funcionan de manera diferente dependiendo del valor de posición.
+
+### Object fill
+La propiedad de object-fit CSS se usa para especificar cómo se debe cambiar el tamaño de <img> o <video> para que se ajuste a su contenedor.
+
+La propiedad de object-fit puede tener los siguientes valores:
+
+** fill **- Esto es por defecto. El contenido reemplazado se dimensiona para llenar el cuadro de contenido del elemento. Si es necesario, el objeto será estirado o aplastado para encajar
+
+** contain** : el contenido reemplazado se escala para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento
+
+** cover **: el contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena todo el cuadro de contenido del elemento. El objeto será recortado para caber
+none - El contenido reemplazado no se redimensiona
+
+scale-down : el contenido se dimensiona como si no se hubiera especificado o no hubiera contenido (lo que daría como resultado un tamaño de objeto concreto más pequeño)
